@@ -1,0 +1,12 @@
+import qrcode
+
+#Data to be encoded in the QR code
+data="sugata karmakar, my gmail-sougatakarmakar@647gmail.com"
+
+#Create a QR code from the data
+qr=qrcode.make(data)
+
+#Save the QR code as an image file
+qr.save("qrcode.png")
+
+print("qr code generated successful!")
